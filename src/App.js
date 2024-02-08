@@ -211,23 +211,7 @@ description: ' Unleashing the Power of Generative Models, Dive into the intersec
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' className='bg-light' />
           <Navbar.Collapse id='basic-navbar-nav'>
-          <nav>
-  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="/" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="/Courses" role="tab" aria-controls="nav-profile" aria-selected="false">Courses</a>
-    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="/about" role="tab" aria-controls="nav-contact" aria-selected="false">About Us</a>
-    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="/blog" role="tab" aria-controls="nav-home" aria-selected="true">Blog</a>
-    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="/Contact" role="tab" aria-controls="nav-profile" aria-selected="false">Contact Us</a>
-    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="/Faculty" role="tab" aria-controls="nav-contact" aria-selected="false">Faculty chapters</a>
-    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="/Student" role="tab" aria-controls="nav-home" aria-selected="true">Student chapters</a>
-    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="/club" role="tab" aria-controls="nav-profile" aria-selected="false">Club</a>
-    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="/Events" role="tab" aria-controls="nav-contact" aria-selected="false">Events</a>
-    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="/Magazine" role="tab" aria-controls="nav-home" aria-selected="true">Magazine</a>
-    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="/Notifications" role="tab" aria-controls="nav-profile" aria-selected="false">Notifications</a>
-    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="/Gallery" role="tab" aria-controls="nav-contact" aria-selected="false">Gallery</a>
-    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="/Achievements" role="tab" aria-controls="nav-contact" aria-selected="false">Achievements</a>
-  </div>
-</nav>
+  
 
           </Navbar.Collapse>
         </Container>
