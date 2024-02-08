@@ -1,0 +1,24 @@
+.notifications-container {
+  background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/n1.png);
+}
+.notifications-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;  /* Set the container to take the full height of the viewport */
+}
+
+.logo-image {
+  max-width: 20%;  /* Make the image fill the width of its container */
+  height: auto;  /* Maintain the aspect ratio of the image */
+  margin-bottom: 20px;  /* Add space below the image */
+}
+
+.notify-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}

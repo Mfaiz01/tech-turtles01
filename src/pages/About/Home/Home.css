@@ -1,0 +1,39 @@
+.home-page header {
+    background-image: linear-gradient(rgba(5, 10, 35, 0.75), 
+    rgba(5, 10, 35, 0.75)),url(../../../utils/images/about-page-header.jpg);
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-section {
+    background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../../utils/images/Cyberpunk2077.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ... (existing styles) */
+
+/* Apply fadeIn animation to your class with longer duration */
+/* ... (existing styles) */
+
+/* Apply fadeIn animation to your class with longer duration */
+.blog-fade-in {
+    animation: fadeIn 3s ease-out; /* Adjust duration and timing function as needed */
+  }
+  
+  /* Define fadeIn animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

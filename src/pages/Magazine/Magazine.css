@@ -1,0 +1,141 @@
+/* Add this CSS to center the button */
+.magazine-content {
+    background-image: linear-gradient(rgba(5, 10, 35, 0.75), 
+    rgba(5, 10, 35, 0.75))
+}
+.increased-font {
+  font-size: 45px; /* Adjust the size as needed */
+  color: #f0f8ff;
+  flex: 1;
+}
+  
+  .body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Magazine.css */
+
+/* ... (your existing styles) */
+
+.magazine-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text inside content */
+
+  /* Additional styling for better visual appeal */
+  padding: 20px;
+}
+
+.more-content {
+  background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)),
+    url(../../utils//images/l2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: aliceblue;
+  padding: 20px;
+  margin-top: 20px; /* Add some top margin to the content */
+}
+
+.another-content {
+  background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)),
+    url(../../utils//images/l3.jpg);
+  background-size: cover;
+  background-position: center;
+  color: aliceblue;
+  padding: 20px;
+  margin-top: 20px; /* Add some top margin to the content */
+}
+
+/* ... (your existing styles) */
+
+  
+
+  
+
+
+
+  
+  /* ... (any additional styles you may have) */
+  
+
+
+
+
+/* ... (any additional styles you may have) */
+
+/* ... (any additional styles you may have) */
+
+
+
+
+
+
+.m-page header {
+background-image: linear-gradient(rgba(5, 10, 35, 0.75), 
+rgba(5, 10, 35, 0.75)),url(../../utils/images/l1.jpg)
+}
+
+
+header {
+  background-size: cover;
+  background-position: center;
+}
+
+/* ... (your existing styles) */
+
+.image-and-name-container {
+  display: flex;
+  justify-content: flex-end; /* Align content to the right side */
+  margin-top: 20px; /* Add margin as needed */
+}
+
+.rounded-writer-image {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  border-radius: 50%; /* Make the image round */
+  margin-right: 20px; /* Add margin as needed */
+}
+
+.writer-name {
+  font-weight: bold;
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+/* ... (any additional styles you may have) */
+/* ... (your existing styles) */
+
+/* ... (your existing styles) */
+
+/* ... (your existing styles) */
+
+.increased-font p,
+.more-content p {
+  font-size: 34px; /* Adjust the size as needed */
+  text-align: justify;
+}
+/* Magazine.css */
+.download-button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Magazine.css */
+
+/* Magazine.css */
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff0000 !important; /* Add !important to override other styles */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #cc0000 !important; /* Add !important to override other styles */
+}

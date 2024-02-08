@@ -1,0 +1,106 @@
+
+
+
+
+.galleryWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the images within the container */
+}
+
+.galleryWrap .single {
+  margin: 10px;
+  width: 600px; /* Set a fixed width for each image container */
+}
+
+.galleryWrap .single img {
+  width: 100%; /* Use 100% width to make the images responsive */
+  height: 300px; /* Set a fixed height for each image */
+  object-fit: cover; /* Maintain the aspect ratio and cover the container */
+  cursor: pointer;
+}
+
+.galleryWrap .single img:hover {
+  transform: scale(1.02);
+}
+
+  .sliderWrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .sliderWrap .btnClose, .sliderWrap .btnPrev, .sliderWrap .btnNext {
+    position: fixed;
+    cursor: pointer;
+    opacity: 0.6;
+    color: #fff;
+    z-index: 9999;
+  }
+  
+  .btnNext:hover, .btnPrev:hover, .btnClose:hover {
+    opacity: 1;
+  }
+  
+  .sliderWrap .btnClose {
+    top: 40px;
+    right: 40px;
+  }
+  
+  .sliderWrap .btnPrev {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+  }
+  
+  .sliderWrap .btnNext {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+  }
+  
+  .fullScreenImage {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fullScreenImage img {
+    max-width: 100%;
+    max-height: 100%;
+    pointer-events: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */  
+  }
+
+ /* ... existing styles ... */
+
+.single {
+  transition: transform 0.3s ease-out;
+}
+
+.single:hover {
+  transform: scale(1.05);
+}
+
+.single.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.sliderWrap.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* ... existing styles ... */

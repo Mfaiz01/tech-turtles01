@@ -1,0 +1,371 @@
+import './App.css';
+import { Link, Routes, Route } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import Home from './pages/About/Home/Home';
+import Courses from './pages/About/Courses/Courses';
+import About from './pages/About/About';
+import Blog from './pages/About/Blog/Blog';
+import Contact from './pages/About/Contact/Contact';
+import Faculty from './pages/Faculty/Faculty';
+import Student from './pages/Student/Student';
+import Club from './pages/club/club';
+import Achievements from './pages/Achievements/Achievements';
+import Magazine from './pages/Magazine/Magazine';
+import Gallery from './pages/Gallery/Gallery';
+import Notifications from './pages/Notifications/Notifications';
+import Events from './pages/Events/Events';
+import Blog1Img from '../src/utils/images/g1.jpg';
+import Blog2Img from '../src/utils/images/g2.jpeg';
+import Blog3Img from '../src/utils/images/g3.jpeg';
+import Blog4Img from '../src/utils/images/g4.jpeg';
+import Blog5Img from '../src/utils/images/g5.jpeg';
+import Blog6Img from '../src/utils/images/g6.webp';
+import Blog7Img from '../src/utils/images/g7.jpeg';
+import Blog8Img from '../src/utils/images/g8.jpeg';
+import Blog9Img from '../src/utils/images/g9.jpeg';
+import Blog10Img from '../src/utils/images/g11.jpeg';
+import Blog11Img from '../src/utils/images/g12.jpeg';
+import Blog12Img from '../src/utils/images/g13.jpeg';
+import Blog13Img from '../src/utils/images/g14.jpeg';
+import Blog14Img from '../src/utils/images/g16.jpeg';
+import Blog15Img from '../src/utils/images/g17.webp';
+import Blog16Img from '../src/utils/images/g18.jpeg';
+import Blog17Img from '../src/utils/images/g15.jpeg';
+import Blog18Img from '../src/utils/images/g19.jpeg';
+import Blog19Img from '../src/utils/images/g20.webp';
+import Blog20Img from '../src/utils/images/g21.webp';
+import Blog21Img from '../src/utils/images/g22.webp';
+import Blog22Img from '../src/utils/images/g23.webp';
+import Blog23Img from '../src/utils/images/g24.webp';
+import Blog24Img from '../src/utils/images/g25.jpeg';
+
+
+function App() {
+  const galleryImages = [
+    {
+      id: 1,
+      img: [Blog1Img],
+      title: 'The Evolution of AI:',
+      description: 'From Concept to Reality Explore the journey of artificial intelligence from its conceptual beginnings to the present day. Highlight key milestones, breakthroughs, and the impact AI has had on various industries.'
+  },
+  {
+      id: 2,
+      img: [Blog2Img],
+      title: 'Ethical Considerations in AI Development:',
+      description: 'Delve into the ethical challenges surrounding AI, discussing topics like bias in algorithms, privacy concerns, and the responsible use of AI technology. Explore how developers and organizations can address these issues.'
+  },
+  {
+      id: 3,
+      img: [Blog3Img],
+      title: 'AI in Healthcare: Revolutionizing Patient Care:',
+      description: 'Examine the transformative role of AI in the healthcare sector. Discuss applications such as predictive analytics, personalized medicine, and robotic surgeries, emphasizing how AI is enhancing patient outcomes and overall healthcare efficiency.'
+  },
+  {
+      id: 4,
+      img: [Blog4Img],
+      title: 'The Rise of Conversational AI:',
+      description: ' Chatbots and Virtual Assistants, Explore the increasing integration of conversational AI in our daily lives. Discuss the capabilities of chatbots and virtual assistants, their impact on customer service, and the potential for more natural and human-like interactions.'
+  },
+  {
+      id: 5,
+      img: [Blog5Img],
+      title: 'AI and Cybersecurity:',
+      description: 'Battling the Digital Threat Landscape, Investigate how AI is being employed to strengthen cybersecurity measures. Highlight applications like threat detection, anomaly identification, and adaptive security systems, showcasing AIs role in safeguarding digital assets. '
+  },
+
+  {
+      id: 6,
+      img: [Blog6Img],
+      title: 'Smart Cities:',
+      description: ' Harnessing AI for Urban Development, Discuss the implementation of AI in creating smart cities. Explore how technology is used to enhance urban infrastructure, improve traffic management, and optimize energy consumption, ultimately creating more sustainable and efficient urban spaces.'
+  },
+  {
+      id: 7,
+      img: [Blog7Img],
+      title: 'AI in Education:',
+      description: ' Personalized Learning and Beyond, Examine the impact of AI on education, focusing on personalized learning experiences, adaptive assessments, and intelligent tutoring systems. Discuss the potential for AI to revolutionize the way we approach education.'
+  },
+  {
+      id: 8,
+      img: [Blog8Img],
+      title: 'The Future of Work: ',
+      description: 'AI and Automation, Explore how AI and automation are reshaping the workforce landscape. Discuss the potential benefits and challenges, as well as the need for upskilling and reskilling to adapt to the changing job market.'
+  },
+  {
+      id: 9,
+      img: [Blog9Img],
+      title: 'AI and Creativity:',
+      description: ' Unleashing the Power of Generative Models, Dive into the intersection of AI and creativity, highlighting the role of generative models in art, music, and design. Explore how AI is pushing the boundaries of human creativity and challenging traditional notions of artistic expression.'
+  },
+  {
+    id: 1,
+    img: [Blog10Img],
+    title: 'The Evolution of AI:',
+    description: 'From Concept to Reality Explore the journey of artificial intelligence from its conceptual beginnings to the present day. Highlight key milestones, breakthroughs, and the impact AI has had on various industries.'
+},
+{
+    id: 2,
+    img: [Blog11Img],
+    title: 'Ethical Considerations in AI Development:',
+    description: 'Delve into the ethical challenges surrounding AI, discussing topics like bias in algorithms, privacy concerns, and the responsible use of AI technology. Explore how developers and organizations can address these issues.'
+},
+{
+    id: 3,
+    img: [Blog12Img],
+    title: 'AI in Healthcare: Revolutionizing Patient Care:',
+    description: 'Examine the transformative role of AI in the healthcare sector. Discuss applications such as predictive analytics, personalized medicine, and robotic surgeries, emphasizing how AI is enhancing patient outcomes and overall healthcare efficiency.'
+},
+{
+    id: 4,
+    img: [Blog13Img],
+    title: 'The Rise of Conversational AI:',
+    description: ' Chatbots and Virtual Assistants, Explore the increasing integration of conversational AI in our daily lives. Discuss the capabilities of chatbots and virtual assistants, their impact on customer service, and the potential for more natural and human-like interactions.'
+},
+{
+    id: 5,
+    img: [Blog14Img],
+    title: 'AI and Cybersecurity:',
+    description: 'Battling the Digital Threat Landscape, Investigate how AI is being employed to strengthen cybersecurity measures. Highlight applications like threat detection, anomaly identification, and adaptive security systems, showcasing AIs role in safeguarding digital assets. '
+},
+
+{
+    id: 6,
+    img: [Blog15Img],
+    title: 'Smart Cities:',
+    description: ' Harnessing AI for Urban Development, Discuss the implementation of AI in creating smart cities. Explore how technology is used to enhance urban infrastructure, improve traffic management, and optimize energy consumption, ultimately creating more sustainable and efficient urban spaces.'
+},
+{
+    id: 7,
+    img: [Blog16Img],
+    title: 'AI in Education:',
+    description: ' Personalized Learning and Beyond, Examine the impact of AI on education, focusing on personalized learning experiences, adaptive assessments, and intelligent tutoring systems. Discuss the potential for AI to revolutionize the way we approach education.'
+},
+{
+    id: 8,
+    img: [Blog17Img],
+    title: 'The Future of Work: ',
+    description: 'AI and Automation, Explore how AI and automation are reshaping the workforce landscape. Discuss the potential benefits and challenges, as well as the need for upskilling and reskilling to adapt to the changing job market.'
+},
+{
+    id: 9,
+    img: [Blog18Img],
+    title: 'AI and Creativity:',
+    description: ' Unleashing the Power of Generative Models, Dive into the intersection of AI and creativity, highlighting the role of generative models in art, music, and design. Explore how AI is pushing the boundaries of human creativity and challenging traditional notions of artistic expression.'
+},
+{
+  id: 8,
+  img: [Blog19Img],
+  title: 'The Future of Work: ',
+  description: 'AI and Automation, Explore how AI and automation are reshaping the workforce landscape. Discuss the potential benefits and challenges, as well as the need for upskilling and reskilling to adapt to the changing job market.'
+},
+{
+  id: 9,
+  img: [Blog20Img],
+  title: 'AI and Creativity:',
+  description: ' Unleashing the Power of Generative Models, Dive into the intersection of AI and creativity, highlighting the role of generative models in art, music, and design. Explore how AI is pushing the boundaries of human creativity and challenging traditional notions of artistic expression.'
+},
+{
+  id: 8,
+  img: [Blog21Img],
+  title: 'The Future of Work: ',
+  description: 'AI and Automation, Explore how AI and automation are reshaping the workforce landscape. Discuss the potential benefits and challenges, as well as the need for upskilling and reskilling to adapt to the changing job market.'
+},
+{
+  id: 9,
+  img: [Blog22Img],
+  title: 'AI and Creativity:',
+  description: ' Unleashing the Power of Generative Models, Dive into the intersection of AI and creativity, highlighting the role of generative models in art, music, and design. Explore how AI is pushing the boundaries of human creativity and challenging traditional notions of artistic expression.'
+},
+{
+id: 8,
+img: [Blog23Img],
+title: 'The Future of Work: ',
+description: 'AI and Automation, Explore how AI and automation are reshaping the workforce landscape. Discuss the potential benefits and challenges, as well as the need for upskilling and reskilling to adapt to the changing job market.'
+},
+{
+id: 9,
+img: [Blog24Img],
+title: 'AI and Creativity:',
+description: ' Unleashing the Power of Generative Models, Dive into the intersection of AI and creativity, highlighting the role of generative models in art, music, and design. Explore how AI is pushing the boundaries of human creativity and challenging traditional notions of artistic expression.'
+},
+
+  
+]
+  return (
+    <div>
+      <Navbar expand="lg" className='position-absolute w-100'>
+        <Container>
+          <Navbar.Brand>
+            <Link to="/" className='navbar-brand d-flex align-items-center'>
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#dc3545" class="bi bi-backpack-fill" viewBox="0 0 16 16">
+                <path d="M5 13v-3h4v.5a.5.5 0 0 0 1 0V10h1v3z"/>
+                <path d="M6 2v.341C3.67 3.165 2 5.388 2 8v5.5A2.5 2.5 0 0 0 4.5 16h7a2.5 2.5 0 0 0 2.5-2.5V8a6.002 6.002 0 0 0-4-5.659V2a2 2 0 1 0-4 0m2-1a1 1 0 0 1 1 1v.083a6.04 6.04 0 0 0-2 0V2a1 1 0 0 1 1-1m0 3a4 4 0 0 1 3.96 3.43.5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14A4 4 0 0 1 8 4M4.5 9h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5"/>
+              </svg>
+              <span className='mx-2 text-light lh-1 fw-semibold'>
+                Tech 
+                <br></br>
+               Turtles
+              </span>
+            </Link>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls='basic-navbar-nav' className='bg-light' />
+          <Navbar.Collapse id='basic-navbar-nav'>
+          <nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="/" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="/Courses" role="tab" aria-controls="nav-profile" aria-selected="false">Courses</a>
+    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="/about" role="tab" aria-controls="nav-contact" aria-selected="false">About Us</a>
+    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="/blog" role="tab" aria-controls="nav-home" aria-selected="true">Blog</a>
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="/Contact" role="tab" aria-controls="nav-profile" aria-selected="false">Contact Us</a>
+    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="/Faculty" role="tab" aria-controls="nav-contact" aria-selected="false">Faculty chapters</a>
+    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="/Student" role="tab" aria-controls="nav-home" aria-selected="true">Student chapters</a>
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="/club" role="tab" aria-controls="nav-profile" aria-selected="false">Club</a>
+    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="/Events" role="tab" aria-controls="nav-contact" aria-selected="false">Events</a>
+    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="/Magazine" role="tab" aria-controls="nav-home" aria-selected="true">Magazine</a>
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="/Notifications" role="tab" aria-controls="nav-profile" aria-selected="false">Notifications</a>
+    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="/Gallery" role="tab" aria-controls="nav-contact" aria-selected="false">Gallery</a>
+    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="/Achievements" role="tab" aria-controls="nav-contact" aria-selected="false">Achievements</a>
+  </div>
+</nav>
+
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+
+
+<Routes>
+  <Route path='/' element={<Home />} />
+  <Route path='/Courses' element={<Courses />} />
+  <Route path='/about' element={<About />} />
+  <Route path='/blog' element={<Blog />} />
+  <Route path='/Contact' element={<Contact />} />
+  <Route path='/Faculty' element={<Faculty />} />
+  <Route path='/Student' element={<Student />} />
+  <Route path='/club' element={<Club />} />
+  <Route path='/Events' element={<Events />} />
+  <Route path='/Achievements' element={<Achievements />} />
+  <Route path='/Magazine' element={<Magazine />} />
+  <Route path='/Notifications' element={<Notifications />} />
+  {/* Add a new route for the Gallery component */}
+<Route path='/Gallery' element={<Gallery galleryImages={galleryImages} />} />
+</Routes>
+
+
+      <footer>
+        <div className='container my-5'>
+          <div className='row d-flex justify-content-between align-items-center'>
+            <div className='col-md-4'>
+              <Link to="/Contact">
+                <button type='button' className='btn btn-outline-danger btn-lg mb-5 mb-md-4'>Get In Touch</button>
+              </Link>
+              <ul className='footer-social-icons list-unstyled d-flex justify-content-between'>
+               <li>
+                <a href="https://www.facebook.com/pesce1962/" target="_blank" rel="noopener noreferrer" title="Visit our Facebook page">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#dc3545" class="bi bi-facebook" viewBox="0 0 16 16">
+                   <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                  </svg>
+                </a>
+              </li>
+
+                  <li>
+                  <a href="https://www.instagram.com/pesmandya/" target="_blank" rel="noopener noreferrer" title="Visit our instagram page">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#dc3545" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg>
+                  </a>  
+                  </li>
+
+                  <li>
+                  <a href="https://www.instagram.com/pesmandya/" target="_blank" rel="noopener noreferrer" title="Visit our twitter">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="dc3545" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                   <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                 </svg>
+                 </a>
+                  </li>
+
+                  <li>
+                  <a href="https://www.instagram.com/pesmandya/" target="_blank" rel="noopener noreferrer" title="Visit our youtube page">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#dc3545" class="bi bi-youtube" viewBox="0 0 16 16">
+                      <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408z"/>
+                    </svg>
+                  </a>  
+                  </li>
+                
+              </ul>
+            </div>
+            <div className='col-md-7 col-lg-6'>
+              <div className='d-row d-md-flex justify-content-between align-items-center'>
+                <div className='col-12 col-md-6 col-lg-5 mb-5 mt-4 my-md-0'>
+                  <ul className='footer-navigation list-unstyled mb-0'>
+                    <Link to="/" className='text-decoration-none text-danger'>
+                      <li className='text-uppercase fw-semibold'>Home</li>
+                    </Link>
+                    <Link to="/courses" className='text-decoration-none text-danger'>
+                      <li className='text-uppercase fw-semibold'>Our courses</li>
+                    </Link>
+                    <Link to="/about" className='text-decoration-none text-danger'>
+                      <li className='text-uppercase fw-semibold'>About us</li>
+                    </Link>
+                    <Link to="/blog" className='text-decoration-none text-danger'>
+                      <li className='text-uppercase fw-semibold'>Blog</li>
+                    </Link>
+                    <Link to="/contact" className='text-decoration-none text-danger'>
+                      <li className='text-uppercase fw-semibold'>Contact us</li>
+                    </Link>
+                    <Link to="/Faculty" className='text-decoration-none text-danger'>
+                      <li className='text-uppercase fw-semibold'>Faculty chapters</li>
+                    </Link>
+                    <Link to="/Student" className='text-decoration-none text-danger'>
+                      <li className='text-uppercase fw-semibold'>Student chapters</li>
+                    </Link>
+                    <Link to="/club" className='text-decoration-none text-danger'>
+                      <li className='text-uppercase fw-semibold'>Club</li>
+                    </Link>
+                    <Link to="/Events" className='text-decoration-none text-danger'>
+                      <li className='text-uppercase fw-semibold'>Events</li>
+                    </Link>
+                    <Link to="/Magazine" className='text-decoration-none text-danger'>
+                      <li className='text-uppercase fw-semibold'>Magazine</li>
+                    </Link>
+                    <Link to="/Notifications" className='text-decoration-none text-danger'>
+                      <li className='text-uppercase fw-semibold'>Notifications</li>
+                    </Link>
+                    <Link to="/Gallery" className='text-decoration-none text-danger'>
+                      <li className='text-uppercase fw-semibold'>Gallery</li>
+                    </Link>
+                    <Link to="/Achievements" className='text-decoration-none text-danger'>
+                      <li className='text-uppercase fw-semibold'>Achievements</li>
+                    </Link>
+                  </ul>
+                </div>
+                <div className='col-12 col-md-6 col-lg-7'>
+                  <ul className='list-unstyled mb-0'>
+                    <li>
+                      <p>Main Address - PES College of Engineering,
+                          PES Engineering College Road,
+                          Mandya, Karnataka - 571 401.</p>
+                    </li>
+                    <li>
+                      <p>Phone Number - 08232 220043</p>
+                    </li>
+                    <li>
+                      <p>Email - admissions@pesce.ac.in</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='bg-body-tertiary'>
+          <div className='container'>
+            <p className='p-3 m-0 text-center'>copyright @ made by Tech Turtles</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+export default App;

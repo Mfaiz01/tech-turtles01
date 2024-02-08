@@ -1,0 +1,14 @@
+.a-page header {
+    background-image: linear-gradient(rgba(5, 10, 35, 0.75), 
+    rgba(5, 10, 35, 0.75)),url(../../utils/images/ac1.jpg)
+}
+
+title{
+    font-size: 2px;
+}
+
+.a-section {
+    background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/ac4.avif);
+    background-size: cover;
+    background-position: center;
+}

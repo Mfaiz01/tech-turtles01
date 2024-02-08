@@ -1,0 +1,56 @@
+
+    
+.Event-content {
+    background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)),
+      url(../../utils//images/e3.png);
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+    padding: 20px;
+    margin-top: 20px; /* Add some top margin to the content */
+  }
+  
+  .a-content {
+    background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)),
+      url(../../utils//images/e2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+    padding: 20px;
+    margin-top: 20px; /* Add some top margin to the content */
+  }
+  
+  
+  .E-page header {
+  background-image: linear-gradient(rgba(5, 10, 35, 0.75), 
+  rgba(5, 10, 35, 0.75)),url(../../utils/images/e1.webp)
+  }
+  
+  /* Define fadeIn animation */
+/* ... (existing styles) */
+
+/* Define fadeIn animation */
+/* ... (existing styles) */
+
+/* Define fadeIn animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply fadeIn animation to your class with longer duration */
+  .text-fade-in {
+    animation: fadeIn 3s ease-out; /* Adjust duration and timing function as needed */
+  }
+  
+  /* Apply fadeIn animation to other classes with longer duration */
+  .other-class {
+    animation: fadeIn 3s ease-out; /* Adjust duration and timing function as needed */
+  }
+  
